@@ -1,0 +1,298 @@
+/**
+ * Theme Name: Free Translation
+ * Author: Andrew Steinmetz
+ * Description: Theme for the Prison Outside: Free Translation Exhibition
+ */
+
+ body{
+    font-family: Rubik, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+header, section{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+header, footer{
+    /*background: #447700;*/
+    background: rgba(128, 99, 96, 0.31);
+    color: #333;
+}
+
+footer{
+    padding: 2rem 0;
+}
+
+h1{
+    padding: 1em 0px;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1.5px
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav{
+    margin-bottom: 1rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.nav__link{
+    color: #333;
+}
+
+.about{
+    overflow: hidden;
+    font-size: 1.125rem;
+    line-height: 1.75em;
+    /*font-family: serif;*/
+    max-width: 800px;
+    transition-property: max-height;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(); 
+    margin-bottom: 1rem;
+    animation-duration: .5s;
+}
+
+.about a{
+    color: #333;
+}
+
+.about--visible{
+    visibility: visible;
+    max-height: 1200px;
+}
+
+.about--hidden{
+    animation-duration: 1s;
+    max-height: 0px;
+}
+
+.about p:last-child{
+    margin-bottom: 3rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.show::after{
+    content: " +";
+}
+
+.hide::after{
+    content: " -";
+}
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 2rem;
+}
+
+.overview{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.details__close-btn{
+    position: fixed;
+    display: block;
+    top: 1rem;
+    right: 2rem;
+    text-indent: -100000px;
+    width: 1rem;
+    height: 1rem;
+}
+
+.details__close-btn::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: 1rem;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+}
+
+.details__close-btn::after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: 1rem;
+    border-right: 2px solid #000;
+    transform: rotate(-45deg);
+}
+
+.details__next-btn{
+    position: fixed;
+    top: 50%;
+    right: 2rem;
+    transform: tranlateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    text-indent: -999999px;
+}
+
+.details__next-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    border-right: 2px solid #000;
+    transform: translateY(-30%) rotate(-45deg);
+}
+
+.details__next-btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    border-right: 2px solid #000;
+    transform: translateY(30%) rotate(45deg) ;
+}
+
+.details__prev-btn{
+    position: fixed;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    left: 2rem;
+    transform: tranlateY(-50%);  
+    text-indent: -999999px; 
+}
+
+.details__prev-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    border-right: 2px solid #000;
+    transform: translateY(-30%) rotate(45deg);
+}
+
+.details__prev-btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    border-right: 2px solid #000;
+    transform: translateY(30%) rotate(-45deg) ;
+}
+
+.overview__artwork-container{
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #dadada;
+}
+
+.overview__artwork-container .overview__artwork-link img{
+    width: 100%;
+}
+
+.details{
+    display: none;
+}
+
+.details--visible{
+    display: block !important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: scroll;
+}
+
+.details__artwork{
+    display: none;
+    padding: 1rem;
+    /*animation-name: fadeout;
+    animation-duration: .5s;*/
+}
+
+.details__artwork--visible{
+    display: block !important;
+    max-width: 800px;
+    margin: 0 auto;
+    /*animation-name: fadein;
+    animation-duration: 1s;*/
+}
+
+.details__artwork img{
+    max-height: 90vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.details__artwork-info{
+    margin: 1rem 0;
+}
+
+.comment__input{
+    display: block;
+    width: 100%;
+    min-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+/*@keyframes expand {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 18rem;
+    }
+}
+
+@keyframes contract {
+    from {
+        height: 18rem;
+    }
+
+    to {
+        height: 0px;
+    }
+}*/
