@@ -58,10 +58,10 @@
         <a id="details-next-btn" class="details__next-btn" href="#">next</a>
         <a id="details-prev-btn" class="details__prev-btn" href="#">prev</a>
         <!-- individual works with credits, descriptions and comments. back and forward links to next and previous artwork -->
-        <?php rewind_posts(); ?>
-        <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
-        <?php $id = get_the_ID(); ?>
         <div id="details-artworks">
+            <?php rewind_posts(); ?>
+            <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+            <?php $id = get_the_ID(); ?>
             <div class="details__artwork js-artwork-detail">
                 <!-- <?php the_post_thumbnail('large'); ?> -->
                 <img data-src="<?php the_post_thumbnail_url($id) ?>">
@@ -98,6 +98,7 @@
             </div>
             <?php endwhile; else : ?>
             <?php endif; ?>
+        </div>
     </section>
     <footer>
         <div class="container">
