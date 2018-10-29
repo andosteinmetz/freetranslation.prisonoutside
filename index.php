@@ -74,16 +74,17 @@
                         $args = array('post_id' => $id);
                         $comments = get_comments($args);
                         // print($id);
-                        // print_r($comments);
+                        // var_dump($comments);
                     ?>
                     <?php if (count($comments) > 0) : ?>
                     <h4>Interpretations</h4>
                     <ul>
-                        <?php foreach($comments as $comment) : if($comment->comment_approved) : ?>
+                        <!-- <?php foreach($comments as $comment) : if($comment->comment_approved) : ?>
                         <li class="details__comment">
                             <?php echo $comment->comment_content; ?> &mdash; <?php echo $comment->comment_author; ?>
                         </li>
-                        <?php endif; endforeach; ?>
+                        <?php endif; endforeach; ?> -->
+                        <?php wp_list_comments(array(), $comments); ?>
                     </ul>
                     <?php endif; ?>
                     <?php comment_form(array(
