@@ -110,15 +110,8 @@ nav{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }*/
 
-.overview{
-    display: flex;
-    flex-flow: row wrap;
-}
-
 .overview__artwork-container{
     box-sizing: border-box;
-    width: 20%;
-    margin: 0px 2% 2rem 2%;
     background: #fff;
     padding: 1rem;
 }
@@ -133,6 +126,18 @@ nav{
 
 .overview__artwork-container .overview__artwork-link img{
     width: 100%;
+}
+
+@media screen and (min-width: 800px){
+    .overview{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .overview__artwork-container{
+        width: 20%;   
+        margin: 0px 2% 2rem 2%;
+    }
 }
 
 .details__close-btn{
