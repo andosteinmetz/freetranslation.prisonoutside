@@ -63,8 +63,8 @@
             <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <?php $id = get_the_ID(); ?>
             <div class="details__artwork js-artwork-detail">
-                <!-- <?php the_post_thumbnail('large'); ?> -->
-                <img data-src="<?php the_post_thumbnail_url($id) ?>">
+                <?php the_post_thumbnail('large'); ?>
+                <!-- <img data-src="<?php the_post_thumbnail_url($id) ?>"> -->
                 <div class="details__artwork-info">
                     <?php echo get_post_meta($id, 'artist', true); ?> - 
                     <em><?php echo get_post_meta($id, 'title', true); ?></em>, 

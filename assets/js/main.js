@@ -133,9 +133,9 @@ function showDetailByIndex(index){
     index = index < 0 || index >= children.length ? mod(index, children.length) : index;
     state.index = index;
     const showMe = children.item(state.index);
+    lazyLoadImages(showMe);
     hideArtworkDetails();
     showDetailsSection();
-    lazyLoadImages(showMe);
     showMe.classList.add('details__artwork--visible');
 }
 

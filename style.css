@@ -126,6 +126,7 @@ nav{
 
 .overview__artwork-container .overview__artwork-link img{
     width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 800px){
@@ -264,6 +265,7 @@ nav{
 
 .details__artwork img{
     max-height: 90vh;
+    width: auto;
     display: block;
     margin: 0 auto;
 }
