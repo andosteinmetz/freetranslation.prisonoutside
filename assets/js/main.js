@@ -32,16 +32,16 @@ function init(){
     detailsNextBtn.addEventListener('click', function(e){
         e.preventDefault();
         nextArtwork();
-    })
+    });
 
     detailsPrevBtn.addEventListener('click', function(e){
         e.preventDefault();
         previousArtwork();
-    })
+    });
 
     aboutBtn.addEventListener('click', function(e){
         toggleAbout(e);
-    })
+    });
 
     for(let i = 0; i < artworkLinks.length; i++){
         const link = artworkLinks.item(i);
@@ -135,6 +135,7 @@ function showDetailByIndex(index){
     const showMe = children.item(state.index);
     hideArtworkDetails();
     showDetailsSection();
+    lazyLoadImages(showMe);
     showMe.classList.add('details__artwork--visible');
 }
 
@@ -175,6 +176,20 @@ function nextArtwork(){
 
 function previousArtwork(){
     showDetailByIndex(state.index - 1);
+}
+
+function lazyLoadImages(el){
+    const images = el.getElementsByTagName('img');
+    for(let i = 0; i < images.length; i++){
+        const image = images[i];
+        lazyLoad(image);
+    }
+}
+
+function lazyLoad(img){
+    if(img.dataset.hasOwnProperty('src')){
+        img.src = img.dataset.src;
+    }
 }
 
 // a modulo that works for both addition and subtraction

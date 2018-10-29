@@ -60,11 +60,12 @@
         <!-- individual works with credits, descriptions and comments. back and forward links to next and previous artwork -->
         <?php rewind_posts(); ?>
         <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
+        <?php $id = get_the_ID(); ?>
         <div id="details-artworks">
             <div class="details__artwork js-artwork-detail">
-                <?php the_post_thumbnail('large'); ?>
+                <!-- <?php the_post_thumbnail('large'); ?> -->
+                <img data-src="<?php the_post_thumbnail_url($id) ?>">
                 <div class="details__artwork-info">
-                    <?php $id = get_the_ID(); ?>
                     <?php echo get_post_meta($id, 'artist', true); ?> - 
                     <em><?php echo get_post_meta($id, 'title', true); ?></em>, 
                     <?php echo get_post_meta($id, 'date', true); ?>
