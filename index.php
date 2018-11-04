@@ -67,7 +67,7 @@
                 <!-- <img data-src="<?php the_post_thumbnail_url($id) ?>"> -->
                 <div class="details__artwork-info">
                     <?php echo get_post_meta($id, 'artist', true); ?> - 
-                    <em><?php echo get_post_meta($id, 'title', true); ?></em>, 
+                    <em><!-- <?php echo get_post_meta($id, 'title', true); ?> --><?php the_title(); ?></em>, 
                     <?php echo get_post_meta($id, 'date', true); ?>
                 </div>
                 <div class="details__comments">
