@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
     <title><?php echo bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
@@ -33,11 +34,30 @@
                     <p>We have been continuously supported by Kone Foundation.</p>
                 </div>
                 <div id="about-fi" class="about-lang about-fi hidden">
-                    <p>tk</p>
+                    <p>Vapaa käännös, monitaiteellinen näyttely esittelee kansainvälisen kattauksen töitä osana Prison outside #2 (Vankila ulkona) tapahtumaa. Tämä on verkkossa esillä oleva versio Vapaa käännös-näyttelystä, joka on esillä MAA-tilassa Helsingissä Marraskuussa 15-29, 2018.</p>
+
+                    <p>Tämä  teoskokonaisuus on kerätty vapaassa haussa vangeilta, ex-vangeilta ja ihmisiltä, joiden elämään vankeus on vaikuttanut. Vapaa haku on avoin kaikille ikäryhmille. Tämä näyttely käyttää käännöksen prosessia ollessamme vuorovaikutuksessa teoksiin ja luodessamme uusia teoksia galleriatilassa. Sinun esillä oleva teoksesi rohkaisee yleisöä antautumaan dialogiin, inspiroitumaan ja aktivoimaan tilaa luovasti. Äänesi on kuultu ja arvostettu. Jos haluat osallistua omalla teoksellasi, lähetä työsi osoitteeseen info@prisonspace.org. Lähetä meille samaan osoitteeseen sähköpostia, jos tarvitset työllesi postitusosoiteen.</p> 
+
+                    <p>Jokaisen kuvan oheen olet tervetullut lisäämään oman “käännöksesi” kyseisestä teoksesta. Käännös voi olla tekstin, visuaalin (esim. kuvan), tai videon muodossa. Käännöksesi ja tulkintasi taas inspiroivat lisää ajatuksia, tunteita ja näkökulmia jaettavaksi ja herätettäväksi eloon .</p> 
+
+                    <p>Prison outside (vankila ulkona) on keskittynyt vankeuden ja oikeuden teemoihin sekä taiteen rooliin vankilassa ja vankilan ulkopuolella olevien ihmisten suhteessa. Olemme kiinnostuneet vankien ja ex-vankien käsityksistä sekä havainnoista yhteiskunnasta ja yhteiskunnassa, ja kuinka voimme murtaa stereotypioita sekä tukea toisiamme. Keskitymme taiteellisen työskentelyn menetelmiin, niin vangin omiin aloitteisiin kuin suunniteltuihin koulutuksellisiin projekteihin, jotka edistävät itseilmaisua, solidaarisuutta ja kommunikaatiota erilaisten elämän polkujen välillä. Tarjoamme myös alustan suhteessa vankeuteen olevien taiteellisten projektien tuottamiseen, tällä hetkellä keskittyen Suomeen ja Venäjään.</p>
+
+                    <p>Olemme saaneet yhtäjaksoisesti tukea Koneen säätiöltä.</p>
                 </div>
 
                 <div id="about-ru" class="about-lang about-ru hidden">
-                    <p>tk</p>
+                    <p>Свободный перевод - это выставка художественных и литературных работ, которая является частью проекта Тюрьма Снаружи #2. Вы видите перед собой электронную версию выставки, которая проходит в пространстве MAA-tila в Хельсинки с 15 по 29 ноября 2018 года.</p>
+
+                    <p>Экспозиция сформирована из работ, присланных нам по почте от осужденных, бывших заключенных, а также людей, на судьбу которых оказала влияние тюрьма. Возраст участника значения не имеет. В течение выставки мы будем создавать новые художественные работы используя “принцип переводчика”. Речь идет о взаимодействии с экспозицией, будь то перевод на другой язык, или ответное произведение искусства, интерпретирующее увиденное. Ваши творчество откроет диалог и активизирует пространство галереи. Ваш голос будет услышан.</p>
+
+                    <p>Работы принимаются по электронному адресу info@prisonspace.org. Напишите нам, если хотите отправить работы по обычной почте, и мы отправим вам адрес.</p>
+
+                    <p>Рядом с каждым изображением вы можете добавить свой “перевод” - интерпретацию этой работы. Можно загрузить текст, картинку, или видео. Ваш “перевод“ послужит вдохновением к новым чувствам, мыслям и перспективам, и процесс креативного взаимодействия будет продолжаться.</p>
+
+                    <p>Проект Prison Outside (Тюрьма Снаружи) изучает темы лишения свободы и социальной справедливости, и роль искусства в отношении между людьми в тюрьме и за ее пределами. Объектом исследования являются как практики, инициированные самостоятельно, так и образовательные и культурные программы, которые проводятся организованно. Мы также исследуем отношение общества к заключенным и судимым людям, стигматизацию, и помощь в ре-социализации. Задача нашего проекта вообще и электронного ресурса в частности, - представить творчество заключенных широкой публике, проявить солидарность, и поделиться опытом проведения социально-ангажированных художественных практик в во всем мире. Мы также создаем и курируем тематические творческие проекты в России и Финляндии.</p> 
+
+                    <p>We have been continuously supported by Kone Foundation.</p>
+
                 </div>
             </div>
         </div>
