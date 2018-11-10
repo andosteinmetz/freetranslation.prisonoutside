@@ -112,8 +112,6 @@ nav{
 
 .overview__artwork-container{
     box-sizing: border-box;
-    background: #fff;
-    padding: 1rem;
 }
 
 .overview__artwork-container:first-child, .overview__artwork-container:nth-child(5n){
