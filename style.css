@@ -73,7 +73,7 @@ nav{
 
 .about--visible{
     visibility: visible;
-    max-height: 2000px;
+    max-height: 2500px;
 }
 
 .about--hidden{
@@ -136,6 +136,12 @@ nav{
     .overview__artwork-container{
         width: 20%;   
         margin: 0px 2% 2rem 2%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .overview__artwork-container{
+        margin-bottom: 2rem;
     }
 }
 
