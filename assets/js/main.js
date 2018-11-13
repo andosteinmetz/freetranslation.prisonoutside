@@ -190,6 +190,9 @@ function lazyLoad(img){
     if(img.dataset.hasOwnProperty('src')){
         img.src = img.dataset.src;
     }
+    if(img.dataset.hasOwnProperty('srcset')){
+        img.srcset = img.dataset.srcset;
+    }
 }
 
 // a modulo that works for both addition and subtraction
