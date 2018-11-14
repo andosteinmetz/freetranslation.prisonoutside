@@ -1,0 +1,11 @@
+<div id="about-fi" class="about-lang about-fi hidden">
+    <p>Vapaa käännös, monitaiteellinen näyttely esittelee kansainvälisen kattauksen töitä osana Prison outside #2 (Vankila ulkona) tapahtumaa. Tämä on verkkossa esillä oleva versio Vapaa käännös-näyttelystä, joka on esillä MAA-tilassa Helsingissä Marraskuussa 15-29, 2018.</p>
+
+    <p>Tämä  teoskokonaisuus on kerätty vapaassa haussa vangeilta, ex-vangeilta ja ihmisiltä, joiden elämään vankeus on vaikuttanut. Vapaa haku on avoin kaikille ikäryhmille. Tämä näyttely käyttää käännöksen prosessia ollessamme vuorovaikutuksessa teoksiin ja luodessamme uusia teoksia galleriatilassa. Sinun esillä oleva teoksesi rohkaisee yleisöä antautumaan dialogiin, inspiroitumaan ja aktivoimaan tilaa luovasti. Äänesi on kuultu ja arvostettu. Jos haluat osallistua omalla teoksellasi, lähetä työsi osoitteeseen info@prisonspace.org. Lähetä meille samaan osoitteeseen sähköpostia, jos tarvitset työllesi postitusosoiteen.</p> 
+
+    <p>Jokaisen kuvan oheen olet tervetullut lisäämään oman “käännöksesi” kyseisestä teoksesta. Käännös voi olla tekstin, visuaalin (esim. kuvan), tai videon muodossa. Käännöksesi ja tulkintasi taas inspiroivat lisää ajatuksia, tunteita ja näkökulmia jaettavaksi ja herätettäväksi eloon .</p> 
+
+    <p>Prison outside (vankila ulkona) on keskittynyt vankeuden ja oikeuden teemoihin sekä taiteen rooliin vankilassa ja vankilan ulkopuolella olevien ihmisten suhteessa. Olemme kiinnostuneet vankien ja ex-vankien käsityksistä sekä havainnoista yhteiskunnasta ja yhteiskunnassa, ja kuinka voimme murtaa stereotypioita sekä tukea toisiamme. Keskitymme taiteellisen työskentelyn menetelmiin, niin vangin omiin aloitteisiin kuin suunniteltuihin koulutuksellisiin projekteihin, jotka edistävät itseilmaisua, solidaarisuutta ja kommunikaatiota erilaisten elämän polkujen välillä. Tarjoamme myös alustan suhteessa vankeuteen olevien taiteellisten projektien tuottamiseen, tällä hetkellä keskittyen Suomeen ja Venäjään.</p>
+
+    <p>Olemme saaneet yhtäjaksoisesti tukea Koneen säätiöltä.</p>
+</div>
