@@ -49,7 +49,11 @@
                             <?php echo $comment->comment_content; ?> &mdash; <?php echo $comment->comment_author; ?>
                         </li>
                         <?php endif; endforeach; ?> -->
-                        <?php wp_list_comments(array(), $comments); ?>
+
+                        <?php 
+                            $comments_options = array('avatar_size' => 0);
+                            wp_list_comments($comments_options, $comments); 
+                        ?>
                     </ul>
                     <?php endif; ?>
                     <?php comment_form(array(

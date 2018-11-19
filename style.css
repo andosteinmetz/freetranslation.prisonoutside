@@ -292,15 +292,19 @@ nav{
     margin-bottom: 1rem;
 }
 
-.comments ul{
-    padding-left: none;
-    margin-left: none;
+.details__comments ul{
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .comment{
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+}
+
+.says{
+    display: none;
 }
 
 .attachmentFile img{
