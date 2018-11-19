@@ -52,6 +52,11 @@ nav{
 
 .nav__link{
     color: #333;
+    margin-right: 2rem;
+}
+
+.lang-link.current{
+    color: #fff;
 }
 
 .about{

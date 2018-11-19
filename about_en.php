@@ -1,4 +1,4 @@
-<div id="about-en" class="about-lang about-en">
+<div id="about-en" data-lang="en" class="about-lang about-en">
     <p>Free translation is a multi-disciplinary exhibition showcasing international works as part of Prison Outside #2.  This is the online version of the exhibition, which is shown at MAA-tila in Helsinki from November 15-29, 2018.</p>
 
     <p>This collection of artworks is generated from an open call to incarcerated people, ex-convicts, and anyone affected by imprisonment. This call is open to all ages. This exhibition will make use of the translation process as we will interact and create new artworks in the gallery space. Your works on view will encourage the audience to prompt dialogue, inspire thoughts, and creatively activate the space. Your voice is heard and recognized. If you would like to contribute artwork, you may send it info@prisonspace.org.</p>

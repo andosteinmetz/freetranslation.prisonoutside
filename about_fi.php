@@ -1,4 +1,4 @@
-<div id="about-fi" class="about-lang about-fi hidden">
+<div id="about-fi" data-lang="fi" class="about-lang about-fi hidden">
     <p>Vapaa käännös, monitaiteellinen näyttely esittelee kansainvälisen kattauksen töitä osana Prison outside #2 (Vankila ulkona) tapahtumaa. Tämä on verkkossa esillä oleva versio Vapaa käännös-näyttelystä, joka on esillä MAA-tilassa Helsingissä Marraskuussa 15-29, 2018.</p>
 
     <p>Tämä  teoskokonaisuus on kerätty vapaassa haussa vangeilta, ex-vangeilta ja ihmisiltä, joiden elämään vankeus on vaikuttanut. Vapaa haku on avoin kaikille ikäryhmille. Tämä näyttely käyttää käännöksen prosessia ollessamme vuorovaikutuksessa teoksiin ja luodessamme uusia teoksia galleriatilassa. Sinun esillä oleva teoksesi rohkaisee yleisöä antautumaan dialogiin, inspiroitumaan ja aktivoimaan tilaa luovasti. Äänesi on kuultu ja arvostettu. Jos haluat osallistua omalla teoksellasi, lähetä työsi osoitteeseen info@prisonspace.org. Lähetä meille samaan osoitteeseen sähköpostia, jos tarvitset työllesi postitusosoiteen.</p> 
