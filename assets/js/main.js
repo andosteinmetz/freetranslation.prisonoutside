@@ -60,12 +60,11 @@ function init(){
         });
     }
 
-    for(var i = 0; i < languageLinks.length; i++){
-        var link = languageLinks[i];
-        var lang = link.dataset.lang;
+    for(var j = 0; j < languageLinks.length; j++){
+        var link = languageLinks[j];
         link.addEventListener('click', function(e){
             e.preventDefault();
-            toggleLang(lang);
+            toggleLang(e.target.dataset.lang);
         })
     }
 }
@@ -160,8 +159,8 @@ function toggleLang(lang){
         toggleByLang(el);
     }
     
-    for(var i = 0; i < $links.length; i++){
-        var el = $links[i];
+    for(var j = 0; j < $links.length; j++){
+        var el = $links[j];
         if(el.dataset.lang === state.lang){
             el.classList.add('current');
         }
