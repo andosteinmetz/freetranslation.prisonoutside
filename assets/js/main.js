@@ -53,11 +53,14 @@ function init(){
     })
 
     for(var i = 0; i < artworkLinks.length; i++){
-        var link = artworkLinks.item(i);
-        link.addEventListener('click', function(e){
-            e.preventDefault();
-            showDetailByIndex(i);
-        });
+        (function(){
+            var idx = i;
+            var link = artworkLinks.item(i);
+            link.addEventListener('click', function(e){
+                e.preventDefault();
+                showDetailByIndex(idx);
+            });
+        })()
     }
 
     for(var j = 0; j < languageLinks.length; j++){
