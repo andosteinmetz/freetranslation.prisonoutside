@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/masonry.pkgd.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
   </head>
