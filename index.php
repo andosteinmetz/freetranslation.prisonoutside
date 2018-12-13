@@ -19,7 +19,7 @@
             <?php rewind_posts(); ?>
             <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <?php $id = get_the_ID(); ?>
-            <div class="details__artwork js-artwork-detail">
+            <div id="detail_<?php echo $id ?>" class="details__artwork js-artwork-detail">
                 <?php if(get_post_meta($id, 'video_embed')) : ?>
                     <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->

@@ -70,6 +70,7 @@ function init(){
             toggleLang(e.target.dataset.lang);
         })
     }
+    showDetailFromLocation();
 }
 
 function respondToKey(e){
@@ -190,12 +191,33 @@ function showEl(el){
     el.classList.remove('hidden');
 }
 
+function showDetailFromLocation(){
+    var urlParams = new URLSearchParams(window.location.search);
+    var id = urlParams.get('id');
+    if(id){
+        showDetailById(id);
+    }
+}
+
+function showDetailById(id){
+    var details = document.getElementById('details-artworks');
+    var children = details.children;
+    for(var i = 0; i < children.length; i++){
+        if (children[i].id === id) {
+            showDetailByIndex(i);
+            break;
+        }
+    }
+}
+
 function showDetailByIndex(index){
     var details = document.getElementById('details-artworks');
     var children = details.children;
     index = index < 0 || index >= children.length ? mod(index, children.length) : index;
     state.index = index;
     var showMe = children.item(state.index);
+    //window.history.pushState({}, '', updateQueryStringParameter(window.location.href, 'id', showMe.id));
+    setLocationById(showMe.id);
     lazyLoadImages(showMe);
     hideArtworkDetails();
     showDetailsSection();
@@ -215,6 +237,7 @@ function hideDetailsSection(){
     if(details.classList.contains('details--visible')){
         details.classList.remove('details--visible');
     }
+    setLocationById('');
     document.removeEventListener('keydown', respondToKey);
 }
 
@@ -261,6 +284,22 @@ function lazyLoad(img){
 // a modulo that works for both addition and subtraction
 function mod(x, m){
     return ((x % m) + m) % m;
+}
+
+function updateQueryStringParameter(uri, key, value) {
+  var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+  var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+    return uri.replace(re, '$1' + key + "=" + value + '$2');
+  }
+  else {
+    return uri + separator + key + "=" + value;
+  }
+}
+
+function setLocationById(id){
+    var url = updateQueryStringParameter(window.location.href, 'id', id);
+    window.history.pushState({}, '', url);
 }
 
 document.addEventListener('DOMContentLoaded', function(){
