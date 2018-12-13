@@ -157,33 +157,33 @@ nav{
 .details__close-btn{
     position: fixed;
     display: block;
-    top: 1rem;
+    top: 0rem;
     right: 2rem;
     text-indent: -100000px;
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .details__close-btn::before{
     content: '';
     position: absolute;
     display: block;
-    top: 0px;
-    left: 0px;
+    top: 50%;
+    left: 50%;
     height: 1rem;
     border-right: 2px solid #000;
-    transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .details__close-btn::after{
     content: '';
     position: absolute;
     display: block;
-    top: 0px;
-    left: 0px;
+    top: 50%;
+    left: 50%;
     height: 1rem;
     border-right: 2px solid #000;
-    transform: rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .details__next-btn{
