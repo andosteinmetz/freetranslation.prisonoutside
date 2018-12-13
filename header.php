@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <!-- <div class="flex"> -->
-                <h1>free translation >< свободный перевод >< vapaa käännös</h1>
+                <h1><a href="<?php echo site_url(); ?>">free translation >< свободный перевод >< vapaa käännös</a></h1>
                 <nav>
                     <a href="#" id="about-link" class="nav__link show">About</a>
                     <a href="#" id="contact-link" class="nav__link show">Contact</a>
