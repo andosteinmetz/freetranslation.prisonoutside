@@ -261,6 +261,11 @@ nav{
     overflow: scroll;
 }
 
+.details--single{
+    display: block !important;
+    position: static;
+}
+
 .details__artwork{
     display: none;
     padding: 1rem;

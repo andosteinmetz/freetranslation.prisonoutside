@@ -4,7 +4,7 @@
             <!-- thumbnail images of works in the exhibition containing links that will take you to a detail view of the selected artwork   -->
             <?php if ( have_posts() ) : while( have_posts() ) : the_post(); ?>
             <div class="overview__artwork-container">
-                <a class="js-artwork-link overview__artwork-link" href="#"><?php the_post_thumbnail('medium'); ?></a>
+                <a class="js-artwork-link overview__artwork-link" href="<?php echo get_post_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
             </div>
             <?php endwhile; else : ?>
             <?php endif; ?>

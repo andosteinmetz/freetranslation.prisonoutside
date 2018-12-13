@@ -7,7 +7,7 @@ var state = {
     lang: 'en',
 }
 
-const keycodes = {
+var keycodes = {
     right: 39,
     left: 37,
     esc: 27,
@@ -19,15 +19,15 @@ var aboutBtn;
 var contactBtn;
 
 function init(){
-    const artworkLinks = document.getElementsByClassName('js-artwork-link');
-    const artworkLinksArray = Array.prototype.slice.call(artworkLinks);
-    const details = document.getElementsByClassName('js-artwork-detail');
-    const detailsCloseBtn = document.getElementById('details-close-btn');
-    const detailsNextBtn = document.getElementById('details-next-btn');
-    const detailsPrevBtn = document.getElementById('details-prev-btn');
+    var artworkLinks = document.getElementsByClassName('js-artwork-link');
+    var artworkLinksArray = Array.prototype.slice.call(artworkLinks);
+    var details = document.getElementsByClassName('js-artwork-detail');
+    var detailsCloseBtn = document.getElementById('details-close-btn');
+    var detailsNextBtn = document.getElementById('details-next-btn');
+    var detailsPrevBtn = document.getElementById('details-prev-btn');
     aboutBtn = document.getElementById('about-link');
     contactBtn = document.getElementById('contact-link');
-    const languageLinks = document.getElementsByClassName('lang-link');
+    var languageLinks = document.getElementsByClassName('lang-link');
 
     detailsCloseBtn.addEventListener('click', function(e){
         e.preventDefault();
@@ -52,20 +52,22 @@ function init(){
         toggleContact(e);
     })
 
-    for(let i = 0; i < artworkLinks.length; i++){
-        const link = artworkLinks.item(i);
-        link.addEventListener('click', function(e){
-            e.preventDefault();
-            showDetailByIndex(i);
-        });
+    for(var i = 0; i < artworkLinks.length; i++){
+        (function(){
+            var idx = i;
+            var link = artworkLinks.item(i);
+            link.addEventListener('click', function(e){
+                e.preventDefault();
+                showDetailByIndex(idx);
+            });
+        })()
     }
 
-    for(let i = 0; i < languageLinks.length; i++){
-        const link = languageLinks[i];
-        const lang = link.dataset.lang;
+    for(var j = 0; j < languageLinks.length; j++){
+        var link = languageLinks[j];
         link.addEventListener('click', function(e){
             e.preventDefault();
-            toggleLang(lang);
+            toggleLang(e.target.dataset.lang);
         })
     }
 }
@@ -90,14 +92,14 @@ function showAbout(){
     hideContact();
     aboutBtn.classList.remove('show');
     aboutBtn.classList.add('hide');
-    const aboutSection = document.getElementById('about');
+    var aboutSection = document.getElementById('about');
     aboutSection.classList.add('about--visible');
     aboutSection.classList.remove('about--hidden');
     state.showAbout = true;
 }
 
 function hideAbout(){
-    const aboutSection = document.getElementById('about');
+    var aboutSection = document.getElementById('about');
     aboutBtn.classList.remove('hide');
     aboutBtn.classList.add('show')
     aboutSection.classList.remove('about--visible');
@@ -109,14 +111,14 @@ function showContact(){
     hideAbout();
     contactBtn.classList.remove('show');
     contactBtn.classList.add('hide');
-    const contactSection = document.getElementById('contact');
+    var contactSection = document.getElementById('contact');
     contactSection.classList.add('about--visible');
     contactSection.classList.remove('about--hidden');
     state.showContact = true;
 }
 
 function hideContact(){
-    const contactSection = document.getElementById('contact');
+    var contactSection = document.getElementById('contact');
     contactBtn.classList.remove('hide');
     contactBtn.classList.add('show');
 
@@ -153,15 +155,15 @@ function toggleContact(e){
 
 function toggleLang(lang){
     state.lang = lang;
-    const $translations = document.getElementsByClassName('about-lang');
-    const $links = document.getElementsByClassName('lang-link');
-    for(let i = 0; i < $translations.length; i++){
-        const el = $translations[i];
+    var $translations = document.getElementsByClassName('about-lang');
+    var $links = document.getElementsByClassName('lang-link');
+    for(var i = 0; i < $translations.length; i++){
+        var el = $translations[i];
         toggleByLang(el);
     }
     
-    for(let i = 0; i < $links.length; i++){
-        const el = $links[i];
+    for(var j = 0; j < $links.length; j++){
+        var el = $links[j];
         if(el.dataset.lang === state.lang){
             el.classList.add('current');
         }
@@ -189,11 +191,11 @@ function showEl(el){
 }
 
 function showDetailByIndex(index){
-    const details = document.getElementById('details-artworks');
-    const children = details.children;
+    var details = document.getElementById('details-artworks');
+    var children = details.children;
     index = index < 0 || index >= children.length ? mod(index, children.length) : index;
     state.index = index;
-    const showMe = children.item(state.index);
+    var showMe = children.item(state.index);
     lazyLoadImages(showMe);
     hideArtworkDetails();
     showDetailsSection();
@@ -201,7 +203,7 @@ function showDetailByIndex(index){
 }
 
 function showDetailsSection(){
-    const details = document.getElementById('details');
+    var details = document.getElementById('details');
     if(!details.classList.contains('details--visible')){
         details.classList.add('details--visible');
     }
@@ -209,7 +211,7 @@ function showDetailsSection(){
 }
 
 function hideDetailsSection(){
-    const details = document.getElementById('details');
+    var details = document.getElementById('details');
     if(details.classList.contains('details--visible')){
         details.classList.remove('details--visible');
     }
@@ -217,16 +219,16 @@ function hideDetailsSection(){
 }
 
 function hideArtworkDetails(){
-    const shown = document.getElementsByClassName('details__artwork--visible');
-    for(let i = 0; i < shown.length; i++){
+    var shown = document.getElementsByClassName('details__artwork--visible');
+    for(var i = 0; i < shown.length; i++){
         shown.item(i).classList.remove('details__artwork--visible');
     }
 }
 
 function nodeListMap(nl, fn){
     // apply a function to every item in a nodeList
-    for(let i = 0; i < nl.length; i++){
-        let item = nodeList.item(i);
+    for(var i = 0; i < nl.length; i++){
+        var item = nodeList.item(i);
         fn(item);
     }
 }
@@ -240,9 +242,9 @@ function previousArtwork(){
 }
 
 function lazyLoadImages(el){
-    const images = el.getElementsByTagName('img');
-    for(let i = 0; i < images.length; i++){
-        const image = images[i];
+    var images = el.getElementsByTagName('img');
+    for(var i = 0; i < images.length; i++){
+        var image = images[i];
         lazyLoad(image);
     }
 }
